@@ -1,0 +1,9 @@
+-- Selecting the first 5 rows from the specified columns
+SELECT 
+  Top (5) description, 
+  event_date 
+FROM 
+  grid 
+  -- Ordering the results by the event_date column
+ORDER BY 
+  event_date;
