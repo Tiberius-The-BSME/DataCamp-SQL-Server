@@ -1,0 +1,14 @@
+-- Selecting description, affected_customers and event date columns
+SELECT 
+  description, 
+  affected_customers,
+  event_date
+FROM 
+  grid 
+  -- The affected_customers column should be >= 50000 and <=150000   
+WHERE 
+  affected_customers BETWEEN 50000
+  AND 150000 
+   -- Define the order   
+ORDER BY 
+  event_date desc;
