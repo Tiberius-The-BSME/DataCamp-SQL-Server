@@ -1,0 +1,10 @@
+SELECT 
+  invoiceline_id,
+  unit_price, 
+  quantity,
+  billing_state
+  -- Specify the source table
+FROM invoice
+  -- Complete the join to the invoice table
+LEFT JOIN invoiceline
+ON invoiceline.invoice_id = invoice.invoice_id;
